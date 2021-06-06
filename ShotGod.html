@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShotGod</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <span id="game_frame">
+        <canvas id="main_canvas"></canvas>
+        <canvas id="bg_canvas"></canvas>
+        <canvas id="role_canvas"></canvas>
+        <canvas id="r_bullets_canvas"></canvas>
+        <canvas id="b_bullets_canvas"></canvas>
+        <canvas id="boss_canvas"></canvas>
+        <img id="stop_button" src="./imgs/game/stop.png" onclick="stopGame()">
+        <span id="start_frame">
+            <img id="start_title" src="./imgs/game/game-title.png">
+            <span id="start_button" onclick="startGame()">游戏开始</span>
+            <span id="version">ver1.0.0</span>
+        </span>
+        <span id="over_frame">
+            Game Over
+            <img class="restart_button" src="./imgs/game/restart.png" onclick="reStart()">
+        </span>
+        <span id="success_frame">
+            You Success!!
+            <img class="restart_button" src="./imgs/game/restart.png" onclick="reStart()">
+        </span>
+        <span id="stop_frame">
+            Stop
+            <img class="restart_button" src="./imgs/game/back.png" onclick="backGame()">
+        </span>
+    </span>
+</body>
+<script src="js/main.js"></script>
+<script src="js/common.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/game.js"></script>
+
+</html>

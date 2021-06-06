@@ -1,0 +1,126 @@
+#game_frame {
+    position: absolute;
+    width: 1452px;
+    height: 680px;
+    border: rgba(57, 72, 204, 0.842) double 20px;
+    border-radius: 18px;
+}
+
+#main_canvas {
+    position: absolute;
+    opacity: 0.8;
+}
+
+#bg_canvas {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.8;
+}
+
+#role_canvas {
+    position: absolute;
+}
+
+#r_bullets_canvas {
+    position: absolute;
+}
+
+#b_bullets_canvas {
+    position: absolute;
+}
+
+#boss_canvas {
+    position: absolute;
+}
+
+#start_frame {
+    position: absolute;
+    z-index: 1;
+    background-image: url('../imgs/game/title-background.png');
+    width: 1452px;
+    height: 680px;
+}
+
+#start_title {
+    position: absolute;   
+    background-color: rgba(255, 255, 255, 0.514);
+    left: 18%;
+    top: 20%;
+}
+
+#version {
+    position: absolute;   
+    top: 96%; 
+    left: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#start_button {
+    position:absolute;
+    left: 45%;
+    top: 52%;
+    width: 160px;
+    height: 40px;
+    border: rgba(0, 225, 255, 0.308) 10px outset;
+    border-radius: 20px;
+    background-color: rgba(0, 225, 255, 0.308);
+    color: rgb(245, 245, 245);
+    font: bolder 20px "幼圆";
+    text-align: center;
+    line-height: 40px;
+}
+
+#over_frame {
+    position: absolute;
+    opacity: 0;
+    width: 1452px;
+    height: 680px;
+    background: rgba(0, 0, 0, 0.671);
+    color: white;
+    text-align: center;
+    line-height: 460px;
+    font-size: 140px;
+    font-weight: bold;
+}
+
+#success_frame {
+    position: absolute;
+    opacity: 0;
+    width: 1452px;
+    height: 680px;
+    background: rgba(0, 0, 0, 0.671);
+    color: red;
+    text-align: center;
+    line-height: 460px;
+    font-size: 140px;
+    font-weight: bold;
+}
+
+#stop_frame {
+    position: absolute;
+    opacity: 0;
+    width: 1452px;
+    height: 680px;
+    background: rgba(0, 0, 0, 0.671);
+    color: white;
+    text-align: center;
+    line-height: 460px;
+    font-size: 140px;
+    font-weight: bold;
+}
+
+.restart_button {
+    position: absolute;
+    /* 与游戏开始按钮优先级一致确保可点击 */
+    z-index: 1;
+    left: 46%;
+    top: 48%;
+}
+
+#stop_button {
+    position: absolute;
+    left: 1350px;
+    top: 20px;
+    height: 80px;
+}
